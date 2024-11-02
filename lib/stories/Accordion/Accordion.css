@@ -1,0 +1,75 @@
+/* src/stories/Accordion.css */
+.accordion {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  margin: 20px 0;
+  overflow: hidden;
+  background-color: #ffffff;
+  margin: 10px;
+  border: 1px solid lightgray;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+  user-select: none;
+}
+
+.accordion-section {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.accordion-header {
+  background-color: #f7f7f7;
+  color: #333333;
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s ease;
+  font-weight: bold;
+  margin: 0;
+}
+
+.accordion-header .header-name {
+  margin: 0;
+  font-size: 16px;
+  flex-grow: 1;
+  font-weight: 500 !important;
+}
+
+.arrow-icon {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+  display: inline-flex; /* Use inline-flex to ensure the icon is treated as an inline element */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  margin-left: 10px; /* Space between text and arrow */
+  transform-origin: center; /* Ensures the rotation is from the center */
+}
+
+.rotate {
+  transform: rotate(90deg);
+}
+
+.accordion-content {
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  max-height: 0;
+  padding: 0 20px;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.accordion-content.open {
+  padding: 15px 20px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  text-align: start;
+}
+
+.accordion-content p {
+  margin: 10px 0;
+}

@@ -1,0 +1,28 @@
+.my-button {
+  background-color: #007bff; /* Primary blue color */
+  color: white; /* White text color */
+  padding: 10px 20px; /* Padding around the text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Font size */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect */
+.my-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Focus effect */
+.my-button:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5); /* Blue shadow for focus */
+}
+
+/* Disabled state */
+.my-button:disabled {
+  background-color: #6c757d; /* Gray background for disabled state */
+  color: white; /* White text color */
+  cursor: not-allowed; /* Not-allowed cursor for disabled state */
+}

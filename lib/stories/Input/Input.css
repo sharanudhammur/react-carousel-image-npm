@@ -1,0 +1,23 @@
+/* src/stories/Input.css */
+.my-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px; /* Default font size */
+}
+
+.my-input.small {
+  font-size: 12px; /* Smaller font size */
+}
+
+.my-input.medium {
+  font-size: 14px; /* Larger font size */
+}
+.my-input.large {
+  font-size: 16px; /* Larger font size */
+}
+
+.my-input:focus {
+  border-color: #007bff; /* Focus color */
+  outline: none; /* Remove default outline */
+}
